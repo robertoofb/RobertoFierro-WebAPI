@@ -60,9 +60,9 @@ namespace WebAPI.Migrations
                 columns: new[] { "PKUser", "FKRol", "Name", "Password", "Username" },
                 values: new object[,]
                 {
-                    { 1, 2, "David", "123", "davi" },
+                    { 1, 2, "Roberto", "123", "bob" },
                     { 2, 1, "Jorge", "123", "joge" },
-                    { 3, 1, "Yeriel", "123", "cupi" }
+                    { 3, 1, "Diego", "123", "dieguin" }
                 });
 
             migrationBuilder.CreateIndex(

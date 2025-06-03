@@ -85,9 +85,9 @@ namespace WebAPI.Migrations
                         {
                             PKUser = 1,
                             FKRol = 2,
-                            Name = "David",
+                            Name = "Roberto",
                             Password = "123",
-                            Username = "davi"
+                            Username = "bob"
                         },
                         new
                         {
@@ -101,9 +101,9 @@ namespace WebAPI.Migrations
                         {
                             PKUser = 3,
                             FKRol = 1,
-                            Name = "Yeriel",
+                            Name = "Diego",
                             Password = "123",
-                            Username = "cupi"
+                            Username = "dieguin"
                         });
                 });
 
