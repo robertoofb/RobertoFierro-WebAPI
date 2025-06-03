@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebAPI.Services.IServices;
-using System.Threading.Tasks;
+﻿using Domain.DTO;
 using Domain.Entities;
-using Domain.DTO;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using WebAPI.Services.IServices;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize] // 👈 Protege todo el controlador
+
     public class UserController : ControllerBase
     {
         private readonly IUserServices _userServices;

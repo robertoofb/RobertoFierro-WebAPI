@@ -1,5 +1,6 @@
 ﻿using Domain.DTO;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization; // ← Importante
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Services.IServices;
@@ -9,6 +10,8 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize] // ← Protege todo el controlador
+
     public class RolController : Controller
     {
         private readonly IRolServices _rolServices;
